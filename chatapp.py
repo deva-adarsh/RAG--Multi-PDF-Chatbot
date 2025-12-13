@@ -4,7 +4,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 import os
 from langchain_google_genai import GoogleGenerativeAIEmbeddings # type: ignore
 import google.generativeai as genai
-from langchain.vectorstores import FAISS # type: ignore
+from langchain_community.vectorstores import FAISS
 from langchain_google_genai import ChatGoogleGenerativeAI # type: ignore
 from langchain.chains.question_answering import load_qa_chain # type: ignore
 from langchain.prompts import PromptTemplate # type: ignore
@@ -121,5 +121,6 @@ st.markdown(
 
 if __name__ == "__main__":
     main()
+
 
 
