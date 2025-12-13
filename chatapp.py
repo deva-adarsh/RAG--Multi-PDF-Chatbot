@@ -14,14 +14,10 @@ load_dotenv()
 # os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-def get_pdf_text(pdf_docs):
-    text=""
-    for pdf in pdf_docs:
-        pdf_reader= PdfReader(pdf)
-        for page in pdf_reader.pages:
-            text+= page.extract_text()
-    return  text
-
+reader = PdfReader(file)
+text = ""
+for page in reader.pages:
+    text += page.extract_text()
 
 
 def get_text_chunks(text):
@@ -121,6 +117,7 @@ st.markdown(
 
 if __name__ == "__main__":
     main()
+
 
 
 
