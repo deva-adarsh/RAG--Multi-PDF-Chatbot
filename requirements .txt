@@ -1,7 +1,0 @@
-streamlit
-google-generativeai
-python-dotenv
-langchain
-langchain-google-genai
-faiss-cpu
-pypdf==3.0.1
