@@ -1,6 +1,6 @@
 import streamlit as st
 from pypdf import PdfReader
-from langchain.text_splitter import RecursiveCharacterTextSplitter # type: ignore
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 import os
 from langchain_google_genai import GoogleGenerativeAIEmbeddings # type: ignore
 import google.generativeai as genai
@@ -121,4 +121,5 @@ st.markdown(
 
 if __name__ == "__main__":
     main()
+
 
