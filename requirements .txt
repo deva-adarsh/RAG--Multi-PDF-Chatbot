@@ -2,7 +2,6 @@ streamlit
 google-generativeai
 python-dotenv
 langchain
-pypdf==3.0.1
+langchain-google-genai
 faiss-cpu
-
-langchain_google_genai
+pypdf==3.0.1
