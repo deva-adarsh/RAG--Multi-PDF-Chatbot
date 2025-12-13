@@ -1,13 +1,13 @@
 import streamlit as st
 from pypdf import PdfReader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 import os
 from langchain_google_genai import GoogleGenerativeAIEmbeddings # type: ignore
 import google.generativeai as genai
-from langchain_community.vectorstores import FAISS
+from langchain.vectorstores import FAISS
 from langchain_google_genai import ChatGoogleGenerativeAI # type: ignore
-from langchain_community.chains import load_qa_chain
-from langchain.prompts import PromptTemplate # type: ignore
+from langchain.chains.question_answering import load_qa_chain
+from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv # type: ignore
 
 load_dotenv()
@@ -121,6 +121,7 @@ st.markdown(
 
 if __name__ == "__main__":
     main()
+
 
 
 
