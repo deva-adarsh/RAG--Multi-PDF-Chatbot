@@ -1,14 +1,7 @@
 streamlit
 google-generativeai
 python-dotenv
-langchain
-pypdf
-faiss-cpu
-langchain-text-splitters
-langchain-community
-langchain_google_genai
 langchain==0.0.350
 langchain-google-genai==0.0.3
-
-
-
+faiss-cpu
+pypdf==3.0.1
